@@ -11,10 +11,11 @@ import {
 import { siteConfig } from "@/lib/config/site.config";
 import { Button } from "./ui/button";
 
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaGithub,  FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaUpwork, } from "react-icons/fa6";
 import { FiCheckCircle } from "react-icons/fi";
+import { TbBrandFiverr } from "react-icons/tb";
 
 const ProfileCard = () => {
   return (
@@ -32,14 +33,14 @@ const ProfileCard = () => {
               <FaGithub />
             </Button>
           </Link>
-          <Link href={siteConfig.social.twitterHref}>
+          <Link href={siteConfig.social.upworkHref}>
             <Button variant={"ghost"} className="rounded-full cursor-pointer">
-              <FaXTwitter />
+              <FaUpwork />
             </Button>
           </Link>
-          <Link href={siteConfig.social.instagramHref}>
+          <Link href={siteConfig.social.fiverrHref}>
             <Button variant={"ghost"} className="rounded-full cursor-pointer">
-              <FaInstagram />
+              <TbBrandFiverr />
             </Button>
           </Link>
           <Link href={siteConfig.social.linkedinHref}>
@@ -59,16 +60,17 @@ const ProfileCard = () => {
               <span className="text-[14px] text-[#808080]">Location</span>
             </div>
           </div>
-          <Link
-            href={"/"}
-            className="w-full cursor-pointer"
+          <a
+            href={siteConfig.profile.resume}
+            download
+            className="w-full"
             suppressHydrationWarning
           >
             <Button className="w-full cursor-pointer font-black">
-              <FiCheckCircle className="" />
-              Hire Me
+              <FiCheckCircle className="mr-2" />
+              Download Resume
             </Button>
-          </Link>
+          </a>
         </CardFooter>
       </Card>
     </div>

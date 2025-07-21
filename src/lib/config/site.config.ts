@@ -5,6 +5,7 @@ export const siteConfig = {
     name: "Utsha Chandra Das",
     title: "Frontend Developer",
     avatar: "/assets/avatar.png",
+    resume: "/assets/utsha_resume.pdf",
     location: "Dhaka, Bangladesh",
     experience: "5 years",
     about:
@@ -28,11 +29,12 @@ export const siteConfig = {
   social: {
     githubHandle: "utsha-das",
     githubHref: "https://github.com/UtshadasCSE",
-    twitterHandle: "utsha-das",
-    twitterHref: "https://x.com/Utsha74032593",
+    upworkHandle: "utsha-kumar-das",
+    upworkHref:
+      "https://www.upwork.com/freelancers/~01dd49410fe052a51d?mp_source=share",
     linkedinHandle: "utsha-kumar-das",
     linkedinHref: "https://www.linkedin.com/in/utshakumardas-csebd25",
-    instagramHandle:"utsha-kumar-das",
-    instagramHref:"https://www.instagram.com/thinkaboututsha/"
+    fiverrHandle: "utsha-dev",
+    fiverrHref: "https://www.fiverr.com/utsha_dev",
   },
 };

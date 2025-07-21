@@ -4,7 +4,7 @@ import { TechStack } from "@/lib/data/techstack.data";
 
 const IconCard = () => {
   return (
-    <div>
+    <div id="home">
       <div
         className="grid lg:grid-cols-3 grid-cols-3 max-sm:grid-cols-2 gap-2 pb-3"
         suppressHydrationWarning

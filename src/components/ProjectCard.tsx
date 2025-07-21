@@ -6,7 +6,7 @@ import { CiLocationArrow1 } from "react-icons/ci";
 
 const ProjectCard = () => {
   return (
-    <div className="grid gap-4 pb-3">
+    <div id="projects" className="grid gap-4 pb-3">
       {projectsData.map((project) => (
         <Link href={project.href} key={project.href} target="_blank">
           <Card className="flex flex-col items-start w-full text-left p-4 gap-1 hover:shadow-md transition">

@@ -89,11 +89,11 @@ const Navbar = () => {
                   key={item.label}
                   href={item.href}
                   onClick={() => setMenuOpen(false)}
-                  className="w-full "
+                  className="w-full cursor-pointer "
                 >
                   <Button
                     variant="ghost"
-                    className="w-full flex justify-start gap-2 "
+                    className="w-full flex justify-start gap-2 cursor-pointer "
                   >
                     {item.icon}
                     {item.label}
@@ -118,7 +118,7 @@ type NavLink = {
 };
 
 const navitems: NavLink[] = [
-  { label: "Home", icon: <IoHomeOutline />, href: "#about" },
+  { label: "Home", icon: <IoHomeOutline />, href: "#home" },
   { label: "Projects", icon: <PiProjectorScreen />, href: "#projects" },
   { label: "Work", icon: <IoBriefcaseOutline />, href: "#work" },
   { label: "Contact", icon: <IoMailOpenOutline />, href: "#contact" },

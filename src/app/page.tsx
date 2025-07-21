@@ -1,8 +1,11 @@
+import EducationCard from "@/components/EducationCard";
 import ExpertiseCard from "@/components/ExpertiseCard";
+import Footer from "@/components/Footer";
 import IconCard from "@/components/IconCard";
 import ProfileCard from "@/components/ProfileCard";
 import ProjectCard from "@/components/ProjectCard";
 import TitleCard from "@/components/TitleCard";
+import WorkCard from "@/components/WorkCard";
 
 export default function Home() {
   return (
@@ -21,6 +24,10 @@ export default function Home() {
           <TitleCard title="Previous Client Projects" />
           <ProjectCard />
           <TitleCard title=" Work History" />
+          <WorkCard />
+          <TitleCard title=" Work History" />
+          <EducationCard />
+          <Footer />
         </div>
       </div>
     </div>

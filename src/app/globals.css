@@ -2,6 +2,9 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --font-fira-sans: "Fira Sans", sans-serif;
