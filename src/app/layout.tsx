@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${firaSans.variable} ${firaCode.variable} antialiased`}>
-        <div className="max-w-5xl max-sm:w-[95%] max-md:w-[95%] mx-auto ">
+        <div className="w-[95%] max-w-5xl mx-auto " suppressHydrationWarning>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"

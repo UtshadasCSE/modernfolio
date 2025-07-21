@@ -32,5 +32,7 @@ export const siteConfig = {
     twitterHref: "https://x.com/Utsha74032593",
     linkedinHandle: "utsha-kumar-das",
     linkedinHref: "https://www.linkedin.com/in/utshakumardas-csebd25",
+    instagramHandle:"utsha-kumar-das",
+    instagramHref:"https://www.instagram.com/thinkaboututsha/"
   },
 };

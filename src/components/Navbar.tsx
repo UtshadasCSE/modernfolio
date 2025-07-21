@@ -22,7 +22,13 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="border p-4 rounded-md flex items-center justify-between relative my-2">
+    <nav
+      className="
+        sticky top-2 z-50 
+        border p-4 rounded-md flex items-center justify-between relative my-2 
+        bg-background backdrop-blur transition-colors duration-300
+      "
+    >
       {/* Left: Logo + name */}
       <div className="flex items-center gap-2">
         <Image
@@ -67,11 +73,15 @@ const Navbar = () => {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
+            suppressHydrationWarning
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="absolute top-full right-0 mt-3 w-full rounded-md border bg-background p-4 shadow-md md:hidden z-50"
+            className="
+              absolute top-full right-0 mt-3 w-full rounded-md border 
+              bg-background p-4 shadow-md md:hidden z-50
+            "
           >
             <div className="flex flex-col gap-2">
               {navitems.map((item) => (
@@ -114,9 +124,9 @@ const navitems: NavLink[] = [
   { label: "Contact", icon: <IoMailOpenOutline />, href: "#contact" },
 ];
 
-// ✅ This wraps your ModeToggle in a full-width container
+// ✅ ModeToggle wrapper for full width in mobile
 const ModeToggleFullWidth = () => (
-  <Button variant={"outline"} suppressHydrationWarning>
+  <Button variant="outline" className="w-full" suppressHydrationWarning>
     <ModeToggle />
   </Button>
 );
