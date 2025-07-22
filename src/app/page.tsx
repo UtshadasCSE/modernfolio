@@ -23,9 +23,9 @@ export default function Home() {
           <ExpertiseCard />
           <TitleCard title="Previous Client Projects" />
           <ProjectCard />
-          <TitleCard title=" Work History" />
+          <TitleCard title="Work History" />
           <WorkCard />
-          <TitleCard title=" Work History" />
+          <TitleCard title="Academic History" />
           <EducationCard />
           <Footer />
         </div>
