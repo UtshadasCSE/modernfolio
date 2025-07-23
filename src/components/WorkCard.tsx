@@ -11,7 +11,9 @@ const WorkCard = () => {
       {worksData.map((work) => (
         <Card key={work.company} className="p-4 mb-4">
           <div className="flex items-center justify-between">
-            <CardTitle>{work.company}</CardTitle>
+            <CardTitle className="text-base text-muted-foreground font-semibold">
+              {work.company}
+            </CardTitle>
             <CardAction className="text-[12px] flex items-center gap-1 border-[1px] p-2 rounded-md">
               <FaCalendarAlt />
               {work.fromDate} - {work.toDate}

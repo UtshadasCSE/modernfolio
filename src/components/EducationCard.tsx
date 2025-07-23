@@ -11,7 +11,9 @@ const EducationCard = () => {
         <Card key={edu.institution} className="p-3 mb-4">
           <div className="flex justify-between items-center">
             <div className="flex flex-col gap-4">
-              <CardTitle>{edu.institution}</CardTitle>
+              <CardTitle className="text-base text-muted-foreground font-semibold">
+                {edu.institution}
+              </CardTitle>
               <small className="flex items-center gap-2">
                 <TbCertificate />
                 <span>{edu.degree}</span>
