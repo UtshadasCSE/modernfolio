@@ -6,6 +6,7 @@ import ProfileCard from "@/components/ProfileCard";
 import ProjectCard from "@/components/ProjectCard";
 import TitleCard from "@/components/TitleCard";
 import WorkCard from "@/components/WorkCard";
+import PricingTable from "@/components/PricingTable";
 
 export default function Home() {
   return (
