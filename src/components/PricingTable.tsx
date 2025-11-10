@@ -2,6 +2,7 @@
 import { Card } from "./ui/card"
 import { Check } from "lucide-react"
 import { Button } from "./ui/button"
+import Link from "next/link"
 
 interface PricingTier {
   name: string
