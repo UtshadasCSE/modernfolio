@@ -88,12 +88,12 @@ const PricingTable = () => {
                 )}
               </div>
 
-              <div className="mb-2">
+              <div className="">
                 <div className="text-[14px] text-muted-foreground">{tier.description}</div>
-                <div className="text-xl font-bold my-1">{tier.price}</div>
+                <div className="text-xl font-bold">{tier.price}</div>
               </div>
 
-                <Link href={fiverLink} target="_blank" rel="noopener noreferrer" className="w-full mb-2">
+                <Link href={fiverLink} target="_blank" rel="noopener noreferrer" className="w-full">
                 <Button className="w-full" variant={tier.isPopular ? "default" : "outline"}>
                   Get Started
                 </Button>
