@@ -101,11 +101,11 @@ const PricingTable = () => {
 
               <div className="flex-1">
                 <p className="text-sm font-semibold mb-3 text-muted-foreground">Includes:</p>
-                <div className="">
+                <div>
                   {tier.features.map((feature, index) => (
                     <div key={index} className="flex items-start gap-3">
                       <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                      <span className="text-[10px] text-foreground leading-relaxed">{feature}</span>
+                      <span className="text-[10px] text-muted-foreground leading-relaxed">{feature}</span>
                     </div>
                   ))}
                 </div>
