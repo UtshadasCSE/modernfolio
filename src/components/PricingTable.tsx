@@ -1,170 +1,123 @@
-"use client";
-
-import React from "react";
-import { Card, CardTitle, CardDescription } from "./ui/card";
-import { Button } from "./ui/button";
-import { Check } from 'lucide-react';
+"use client"
+import { Card } from "./ui/card"
+import { Check } from "lucide-react"
+import { Button } from "./ui/button"
 
 interface PricingTier {
-  name: string;
-  price: string;
-  period?: string;
-  description: string;
-  features: string[];
-  cta: string;
-  highlight?: boolean;
+  name: string
+  price: string
+  description: string
+  features: string[]
+  isPopular?: boolean
 }
 
-const pricingTiers: PricingTier[] = [
+const pricingData: PricingTier[] = [
   {
     name: "Starter",
     price: "$29",
-    period: "/month",
-    description: "Perfect for individuals and small projects",
+    description: "Perfect for beginners",
     features: [
-      "Up to 5 projects",
-      "Basic analytics dashboard",
+      "5 projects",
+      "10 GB storage",
+      "Basic analytics",
       "Email support",
-      "1 GB storage",
       "Community access",
       "Monthly updates",
-      "Standard API rate limits",
-      "Basic integrations",
+      "API access",
+      "1 team member",
     ],
-    cta: "Get Started",
   },
   {
     name: "Professional",
     price: "$99",
-    period: "/month",
-    description: "Ideal for growing teams and businesses",
+    description: "For growing teams",
     features: [
-      "Unlimited projects",
-      "Advanced analytics & reporting",
-      "Priority email & chat support",
+      "50 projects",
       "100 GB storage",
-      "Team collaboration tools",
+      "Advanced analytics",
+      "Priority email support",
+      "Community access",
       "Weekly updates",
-      "Enhanced API rate limits",
-      "Premium integrations",
-      "Custom workflows",
-      "Advanced security features",
-      "Version control integration",
-      "Staging environment",
+      "API access",
+      "10 team members",
+      "Custom integrations",
+      "Advanced security",
+      "Export options",
+      "Dedicated manager",
     ],
-    cta: "Start Free Trial",
-    highlight: true,
+    isPopular: true,
   },
   {
     name: "Enterprise",
-    price: "Custom",
-    description: "For large-scale operations and enterprises",
+    price: "$299",
+    description: "For large organizations",
     features: [
-      "Everything in Professional",
-      "Dedicated account manager",
-      "24/7 phone & priority support",
+      "Unlimited projects",
       "Unlimited storage",
-      "Advanced team management",
-      "Daily updates & patches",
-      "Unlimited API rate limits",
+      "Real-time analytics",
+      "24/7 phone support",
+      "Priority community",
+      "Daily updates",
+      "Full API access",
+      "Unlimited team members",
       "Custom integrations",
-      "Advanced automation workflows",
-      "Enterprise-grade security",
-      "SSO & SAML authentication",
-      "On-premise deployment options",
-      "Custom SLA agreements",
+      "Enterprise security",
+      "Advanced export",
+      "Dedicated team",
+      "SLA guarantee",
     ],
-    cta: "Contact Sales",
   },
-];
+]
 
-export default function PricingTable() {
+const PricingTable = () => {
   return (
-    <div className="w-full py-16 px-4 bg-background">
-      <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-foreground mb-4">
-            Transparent Pricing
-          </h1>
-          <p className="text-lg text-muted-foreground">
-            Choose the perfect plan for your needs. Scale as you grow.
-          </p>
-        </div>
+    <div className="w-full">
+      <h2 className="font-black text-xl pb-3">Pricing Plans</h2>
 
-        {/* Pricing Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-          {pricingTiers.map((tier) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+        {pricingData.map((tier) => (
+          <div
+            key={tier.name}
+            className={`transition-all duration-300 ${tier.isPopular ? "md:scale-105 md:shadow-lg" : ""}`}
+          >
             <Card
-              key={tier.name}
-              className={`relative flex flex-col p-6 rounded-lg transition-all duration-300 ${
-                tier.highlight
-                  ? "border-primary shadow-lg scale-105"
-                  : "hover:shadow-md"
-              }`}
+              className={`h-full flex flex-col p-4 md:p-6 ${tier.isPopular ? "ring-2 ring-primary bg-muted/50" : ""}`}
             >
-              {/* Recommended Badge */}
-              {tier.highlight && (
-                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-primary text-primary-foreground text-xs font-semibold px-3 py-1 rounded-full">
-                    Recommended
+              <div className="mb-4">
+                <h3 className="text-lg font-bold">{tier.name}</h3>
+                {tier.isPopular && (
+                  <span className="inline-block text-xs font-semibold px-2 py-1 rounded-full bg-primary text-primary-foreground mt-2">
+                    Most Popular
                   </span>
-                </div>
-              )}
-
-              {/* Tier Header */}
-              <div className="mb-6">
-                <CardTitle className="text-2xl font-bold text-foreground mb-2">
-                  {tier.name}
-                </CardTitle>
-                <CardDescription className="text-foreground/70">
-                  {tier.description}
-                </CardDescription>
+                )}
               </div>
 
-              {/* Pricing */}
-              <div className="mb-6">
-                <div className="flex items-baseline gap-1">
-                  <span className="text-3xl font-bold text-foreground">
-                    {tier.price}
-                  </span>
-                  {tier.period && (
-                    <span className="text-muted-foreground">{tier.period}</span>
-                  )}
-                </div>
+              <div className="mb-4">
+                <div className="text-base text-muted-foreground">{tier.description}</div>
+                <div className="text-4xl font-bold my-2">{tier.price}</div>
               </div>
 
-              {/* CTA Button */}
-              <Button
-                className={`w-full mb-6 ${
-                  tier.highlight
-                    ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                    : "bg-secondary text-secondary-foreground hover:bg-secondary/90"
-                }`}
-              >
-                {tier.cta}
+              <Button className="w-full mb-6" variant={tier.isPopular ? "default" : "outline"}>
+                Get Started
               </Button>
 
-              {/* Features List */}
-              <div className="space-y-3 flex-1">
-                {tier.features.map((feature, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-foreground/80">{feature}</span>
-                  </div>
-                ))}
+              <div className="flex-1">
+                <p className="text-sm font-semibold mb-4 text-muted-foreground">Includes:</p>
+                <div className="space-y-3">
+                  {tier.features.map((feature, index) => (
+                    <div key={index} className="flex items-start gap-3">
+                      <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-foreground leading-relaxed">{feature}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </Card>
-          ))}
-        </div>
-
-        {/* Footer Text */}
-        <div className="text-center mt-12">
-          <p className="text-muted-foreground">
-            All plans include a 14-day free trial. No credit card required.
-          </p>
-        </div>
+          </div>
+        ))}
       </div>
     </div>
-  );
+  )
 }
+
+export default PricingTable
