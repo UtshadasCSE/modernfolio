@@ -14,66 +14,61 @@ interface PricingTier {
 const pricingData: PricingTier[] = [
   {
     name: "Starter",
-    price: "$29",
-    description: "Perfect for beginners",
+    price: "$40",
+    description: "Branded One-Product Store + Premium Theme + Winning Product Research + Custom Logo for Shopify, WordPress, HubSpot & Wix",
     features: [
-      "5 projects",
-      "10 GB storage",
-      "Basic analytics",
-      "Email support",
-      "Community access",
-      "Monthly updates",
-      "API access",
-      "1 team member",
+      "2 Pages Website",
+      "Fully Functional",
+      "Responsive Design",
+      "Content Management",
+      "SEO-Friendly",
+      "User-Friendly Layout",
+      "Work until your satisfaction",
+      "30 days ongoing support",
     ],
   },
   {
     name: "Professional",
-    price: "$99",
-    description: "For growing teams",
+    price: "$130",
+    description: "Get a fully branded store on Shopify, WordPress, HubSpot, or Wix with 20 winning products, premium design, and a high-converting layout.",
     features: [
-      "50 projects",
-      "100 GB storage",
-      "Advanced analytics",
-      "Priority email support",
-      "Community access",
-      "Weekly updates",
-      "API access",
-      "10 team members",
-      "Custom integrations",
-      "Advanced security",
-      "Export options",
-      "Dedicated manager",
+      "5 Pages Website",
+      "Responsive Design",
+      "Content Upload",
+      "5 Plugins or Extensions",
+      "SEO Optimization",
+      "Social Media Integration",
+      "Unlimited Revisions",
+      "Work until your satisfaction",
+      "30 days ongoing support",
+   
     ],
     isPopular: true,
   },
   {
     name: "Enterprise",
-    price: "$299",
-    description: "For large organizations",
+    price: "$200",
+    description: "Get a powerful store on Shopify, WordPress, HubSpot, or Wix with 50 researched products, custom branding, SEO, and app/plugin integrations.",
     features: [
-      "Unlimited projects",
-      "Unlimited storage",
-      "Real-time analytics",
-      "24/7 phone support",
-      "Priority community",
-      "Daily updates",
-      "Full API access",
-      "Unlimited team members",
+      "8 Pages Website",
+      "Responsive Design",
+      "Content Upload",
+      "Content Management",
+      "6 Plugins or Extensions",
+      "SEO Optimization",
       "Custom integrations",
-      "Enterprise security",
-      "Advanced export",
-      "Dedicated team",
-      "SLA guarantee",
+      "Social Media Integration",
+      "Unlimited Revisions",
+      "Work Until Your Satisfaction",
+      "30 days ongoing support",
     ],
   },
 ]
 
 const PricingTable = () => {
+   const fiverLink = "https://www.fiverr.com/utsha_dev"
   return (
     <div className="w-full">
-      <h2 className="font-black text-xl pb-3">Pricing Plans</h2>
-
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
         {pricingData.map((tier) => (
           <div
@@ -97,9 +92,11 @@ const PricingTable = () => {
                 <div className="text-4xl font-bold my-2">{tier.price}</div>
               </div>
 
-              <Button className="w-full mb-6" variant={tier.isPopular ? "default" : "outline"}>
-                Get Started
-              </Button>
+                <Link href={fiverLink} target="_blank" rel="noopener noreferrer" className="w-full mb-6">
+                <Button className="w-full" variant={tier.isPopular ? "default" : "outline"}>
+                  Get Started
+                </Button>
+              </Link>
 
               <div className="flex-1">
                 <p className="text-sm font-semibold mb-4 text-muted-foreground">Includes:</p>
