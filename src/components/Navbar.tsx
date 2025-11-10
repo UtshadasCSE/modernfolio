@@ -5,7 +5,9 @@ import {
   IoBriefcaseOutline,
   IoHomeOutline,
   IoMailOpenOutline,
+  IoPricetagsOutline,
 } from "react-icons/io5";
+
 import { PiProjectorScreen } from "react-icons/pi";
 
 import Link from "next/link";
@@ -120,6 +122,7 @@ type NavLink = {
 const navitems: NavLink[] = [
   { label: "Home", icon: <IoHomeOutline />, href: "#home" },
   { label: "Projects", icon: <PiProjectorScreen />, href: "#projects" },
+  { label: "Pricing", icon: <IoPricetagsOutline />, href: "#pricing" },
   { label: "Work", icon: <IoBriefcaseOutline />, href: "#work" },
   { label: "Contact", icon: <IoMailOpenOutline />, href: "#contact" },
 ];
