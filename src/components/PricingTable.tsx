@@ -79,7 +79,7 @@ const PricingTable = () => {
             <Card
               className={`h-full flex flex-col p-4 md:p-6 ${tier.isPopular ? "ring-2 ring-primary bg-muted/50" : ""}`}
             >
-              <div className="mb-4">
+              <div className="mb-2">
                 <h3 className="text-base font-bold">{tier.name}</h3>
                 {tier.isPopular && (
                   <span className="inline-block text-xs font-semibold px-2 py-1 rounded-full bg-primary text-primary-foreground mt-2">
@@ -88,7 +88,7 @@ const PricingTable = () => {
                 )}
               </div>
 
-              <div className="mb-4">
+              <div className="mb-2">
                 <div className="text-[14px] text-muted-foreground">{tier.description}</div>
                 <div className="text-xl font-bold my-1">{tier.price}</div>
               </div>
