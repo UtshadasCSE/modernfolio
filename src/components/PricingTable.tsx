@@ -70,7 +70,7 @@ const PricingTable = () => {
    const fiverLink = "https://www.fiverr.com/utsha_dev"
   return (
     <div className="w-full mb-[30px]">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-4">
         {pricingData.map((tier) => (
           <div
             key={tier.name}
