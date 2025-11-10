@@ -6,6 +6,12 @@ export type Projects = {
 
 export const projectsData: Projects[] = [
   {
+    title: "Luscia – The Marketplace for Modern Elegance",
+    description:
+      "Luscia is a Dutch-based curated online marketplace showcasing refined jewellery, fashion and lifestyle accessories crafted by local designers. The site positions itself as a space where “timeless design meets local craftsmanship.",
+    href: "https://luscia.nl/",
+  },
+  {
     title: "Beach Street Skin Care",
     description:
       "Beach Street is a modern lifestyle brand website showcasing premium beachwear and accessories. The site features a clean, responsive design with smooth navigation and a focus on user experience.",
