@@ -9,7 +9,7 @@ export const siteConfig = {
     location: "Dhaka, Bangladesh",
     experience: "5 years",
     about:
-      "Hi, I’m a Frontend Developer from Bangladesh with 5+ years of experience. I specialize in Shopify theme and building modern, responsive UIs using React and Next.js.",
+      "Hi, I’m a Frontend Developer from Bangladesh with 5+ years of experience. I specialize in Shopify theme development, WordPress, HubSpot, and Wix, building modern, responsive UIs using React and Next.js.",
     keywords: [
       "Software Engineer",
       "Full Stack Developer",

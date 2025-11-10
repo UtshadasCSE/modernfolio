@@ -12,6 +12,30 @@ export const projectsData: Projects[] = [
     href: "https://luscia.nl/",
   },
   {
+    title: "REP HYPR Apparel",
+    description:
+      "REP HYPR is a UK-based performance-wear brand that blends function and style for athletes and everyday gym-goers. With collections like “Core Series”, “Athletics Craft” and “GAINZFIT”, they sell hoodies, tees, tanks and joggers made for movement and confidence.",
+    href: "https://rephypr.com/",
+  },
+  {
+    title: "Upside Jelly Supplements",
+    description:
+      "Upside is a Singapore-based wellness brand offering plant-based jelly supplements. Made with natural, vegan, and gluten-free ingredients. It helps reduce hangovers and keeps you refreshed the next day.",
+    href: "https://enjoyupside.sg/",
+  },
+  {
+    title: "Aime Child Luxury Essentials",
+    description:
+      "Aime Child is a luxury kidswear brand offering premium essentials for babies and toddlers. Their collection includes soft, breathable undershirts, pajamas, and underwear. Designed for ultimate comfort with timeless, minimal style.",
+    href: "https://aimechild.com/",
+  },
+  {
+    title: "Prosonus Solutions Support",
+    description:
+      "Prosonus Solutions offers affordable, accurate document‑preparation services for individuals filing Chapter 7 or Chapter 13 bankruptcy. They streamline the self‑filing process with secure online intake, expert support, and flat‑fee pricing.",
+    href: "https://prosonussolutions.org/",
+  },
+  {
     title: "Beach Street Skin Care",
     description:
       "Beach Street is a modern lifestyle brand website showcasing premium beachwear and accessories. The site features a clean, responsive design with smooth navigation and a focus on user experience.",
