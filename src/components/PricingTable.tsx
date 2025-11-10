@@ -70,7 +70,7 @@ const PricingTable = () => {
    const fiverLink = "https://www.fiverr.com/utsha_dev"
   return (
     <div className="w-full mb-[30px]">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-3">
         {pricingData.map((tier) => (
           <div
             key={tier.name}
@@ -79,7 +79,7 @@ const PricingTable = () => {
             <Card
               className={`h-full flex flex-col p-4 md:p-6 ${tier.isPopular ? "ring-2 ring-primary bg-muted/50" : ""}`}
             >
-              <div className="">
+              <div>
                 <h3 className="text-base font-bold">{tier.name}</h3>
                 {tier.isPopular && (
                   <span className="inline-block text-xs font-semibold px-2 py-1 rounded-full bg-primary text-primary-foreground mt-2">
@@ -88,7 +88,7 @@ const PricingTable = () => {
                 )}
               </div>
 
-              <div className="">
+              <div>
                 <div className="text-[10px] text-muted-foreground">{tier.description}</div>
                 <div className="text-xl font-bold">{tier.price}</div>
               </div>
@@ -100,7 +100,7 @@ const PricingTable = () => {
               </Link>
 
               <div className="flex-1">
-                <p className="text-sm font-semibold mb-4 text-muted-foreground">Includes:</p>
+                <p className="text-sm font-semibold mb-3 text-muted-foreground">Includes:</p>
                 <div className="">
                   {tier.features.map((feature, index) => (
                     <div key={index} className="flex items-start gap-3">
