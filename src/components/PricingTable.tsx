@@ -16,7 +16,7 @@ const pricingData: PricingTier[] = [
   {
     name: "Starter",
     price: "$40",
-    description: "Branded One-Product Store + Premium Theme + Winning Product Research + Custom Logo for Shopify, WordPress, HubSpot & Wix",
+    description: "Branded One-Product Store or landing page website",
     features: [
       "2 Pages Website",
       "Fully Functional",
@@ -31,7 +31,7 @@ const pricingData: PricingTier[] = [
   {
     name: "Professional",
     price: "$130",
-    description: "Get a fully branded store on Shopify, WordPress, HubSpot, or Wix with 20 winning products, premium design, and a high-converting layout.",
+    description: "Fully Branded Store with 20 Products or 5 pages webiste",
     features: [
       "5 Pages Website",
       "Responsive Design",
@@ -49,7 +49,7 @@ const pricingData: PricingTier[] = [
   {
     name: "Enterprise",
     price: "$200",
-    description: "Get a powerful store on Shopify, WordPress, HubSpot, or Wix with 50 researched products, custom branding, SEO, and app/plugin integrations.",
+    description: "Powerful Store with 50 Products or 8 pages website",
     features: [
       "8 Pages Website",
       "Responsive Design",
@@ -80,7 +80,7 @@ const PricingTable = () => {
               className={`h-full flex flex-col p-4 md:p-6 ${tier.isPopular ? "ring-2 ring-primary bg-muted/50" : ""}`}
             >
               <div className="mb-4">
-                <h3 className="text-lg font-bold">{tier.name}</h3>
+                <h3 className="text-base font-bold">{tier.name}</h3>
                 {tier.isPopular && (
                   <span className="inline-block text-xs font-semibold px-2 py-1 rounded-full bg-primary text-primary-foreground mt-2">
                     Most Popular
@@ -89,8 +89,8 @@ const PricingTable = () => {
               </div>
 
               <div className="mb-4">
-                <div className="text-base text-muted-foreground">{tier.description}</div>
-                <div className="text-4xl font-bold my-2">{tier.price}</div>
+                <div className="text-[14px] text-muted-foreground">{tier.description}</div>
+                <div className="text-xl font-bold my-2">{tier.price}</div>
               </div>
 
                 <Link href={fiverLink} target="_blank" rel="noopener noreferrer" className="w-full mb-6">
