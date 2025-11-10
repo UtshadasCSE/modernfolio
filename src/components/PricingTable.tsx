@@ -89,7 +89,7 @@ const PricingTable = () => {
               </div>
 
               <div className="">
-                <div className="text-[14px] text-muted-foreground">{tier.description}</div>
+                <div className="text-[10px] text-muted-foreground">{tier.description}</div>
                 <div className="text-xl font-bold">{tier.price}</div>
               </div>
 
