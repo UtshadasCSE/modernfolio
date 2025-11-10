@@ -27,6 +27,7 @@ export default function Home() {
           <WorkCard />
           <TitleCard title="Academic History" />
           <EducationCard />
+          <PricingTable />
           <Footer />
         </div>
       </div>
