@@ -90,10 +90,10 @@ const PricingTable = () => {
 
               <div className="mb-4">
                 <div className="text-[14px] text-muted-foreground">{tier.description}</div>
-                <div className="text-xl font-bold my-2">{tier.price}</div>
+                <div className="text-xl font-bold my-1">{tier.price}</div>
               </div>
 
-                <Link href={fiverLink} target="_blank" rel="noopener noreferrer" className="w-full mb-6">
+                <Link href={fiverLink} target="_blank" rel="noopener noreferrer" className="w-full mb-2">
                 <Button className="w-full" variant={tier.isPopular ? "default" : "outline"}>
                   Get Started
                 </Button>

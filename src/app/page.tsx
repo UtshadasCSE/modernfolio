@@ -28,6 +28,7 @@ export default function Home() {
           <WorkCard />
           <TitleCard title="Academic History" />
           <EducationCard />
+            <TitleCard title="My Packages" />
           <PricingTable />
           <Footer />
         </div>
