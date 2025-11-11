@@ -102,10 +102,10 @@ const PricingTable = () => {
                 href={fiverLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full cursor-pointer"
+                className="w-full"
               >
                 <Button
-                  className="w-full"
+                  className="w-full cursor-pointer"
                   variant={tier.isPopular ? "default" : "outline"}
                 >
                   Get Started
