@@ -43,8 +43,8 @@ const Navbar = () => {
         />
         <Link href={siteConfig.social.linkedinHref} suppressHydrationWarning>
           <Button variant="outline" className="cursor-pointer">
-            <OnlineStatus />
             @utsha-das
+            <OnlineStatus />
           </Button>
         </Link>
       </div>
