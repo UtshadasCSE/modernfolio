@@ -5,6 +5,8 @@ import {
   FaWix,
   FaWordpress,
 } from "react-icons/fa";
+import { SiWoocommerce } from "react-icons/si";
+
 
 // CORRECT
 export const Expertise = [
@@ -13,4 +15,5 @@ export const Expertise = [
   { name: "Wix", icon: FaWix },
   { name: "Hubspot", icon: FaHubspot },
   { name: "SquareSpace", icon: FaSquarespace },
+  { name: "Woocommerce", icon: SiWoocommerce },
 ];
