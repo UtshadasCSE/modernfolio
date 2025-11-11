@@ -78,7 +78,7 @@ const PricingTable = () => {
             }`}
           >
             <Card
-              className={`h-full flex flex-col p-4 md:p-6 ${
+              className={`h-full flex flex-col p-4 md:p-6 gap-2 ${
                 tier.isPopular ? "ring-2 ring-primary bg-muted/50" : ""
               }`}
             >
