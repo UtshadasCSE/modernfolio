@@ -19,6 +19,7 @@ import { ModeToggle } from "./darkmode.toggle";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import OnlineStatus from "./OnlineStatus";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -42,6 +43,7 @@ const Navbar = () => {
         />
         <Link href={siteConfig.social.linkedinHref} suppressHydrationWarning>
           <Button variant="outline" className="cursor-pointer">
+            <OnlineStatus />
             @utsha-das
           </Button>
         </Link>

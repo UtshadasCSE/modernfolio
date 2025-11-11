@@ -11,16 +11,16 @@ import {
 import { siteConfig } from "@/lib/config/site.config";
 import { Button } from "./ui/button";
 
-import { FaGithub,  FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
-import { FaUpwork, } from "react-icons/fa6";
+import { FaUpwork } from "react-icons/fa6";
 import { FiCheckCircle } from "react-icons/fi";
 import { TbBrandFiverr } from "react-icons/tb";
 
 const ProfileCard = () => {
   return (
     <div className="lg:sticky lg:top-24">
-      <Card className="">
+      <Card>
         <CardHeader>
           <CardTitle className="font-semibold text-lg">
             {siteConfig.profile.name}
