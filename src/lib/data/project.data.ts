@@ -24,10 +24,10 @@ export const projectsData: Projects[] = [
     href: "https://enjoyupside.sg/",
   },
   {
-    title: "Aime Child Luxury Essentials",
+    title: "TIKIBOO Pets – Natural Pet Products",
     description:
-      "Aime Child is a luxury kidswear brand offering premium essentials for babies and toddlers. Their collection includes soft, breathable undershirts, pajamas, and underwear. Designed for ultimate comfort with timeless, minimal style.",
-    href: "https://aimechild.com/",
+      "TIKIBOO Pets offers high-quality, all-natural pet products — from freeze-dried dog treats to thick, leak-proof waste bags. Every purchase helps support animal rescue efforts and the dream of building a sanctuary for pets in need. Free shipping in Canada on orders over $20.",
+    href: "https://www.tikiboopets.ca/",
   },
   {
     title: "Prosonus Solutions Support",
