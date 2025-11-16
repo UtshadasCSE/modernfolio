@@ -12,6 +12,12 @@ export const projectsData: Projects[] = [
     href: "https://luscia.nl/",
   },
   {
+    title: "RealWorld Anime Arc – Anime Apparel & Merch",
+    description:
+      "Shop high-quality anime-inspired hoodies & tees at RealWorld Anime Arc. Free shipping on orders over $50. Unleash your style with fan-favorite collections.",
+    href: "https://realworldanimearc.com/",
+  },
+  {
     title: "REP HYPR Apparel",
     description:
       "REP HYPR is a UK-based performance-wear brand that blends function and style for athletes and everyday gym-goers. With collections like “Core Series”, “Athletics Craft” and “GAINZFIT”, they sell hoodies, tees, tanks and joggers made for movement and confidence.",
@@ -28,6 +34,18 @@ export const projectsData: Projects[] = [
     description:
       "TIKIBOO Pets offers high-quality, all-natural pet products — from freeze-dried dog treats to thick, leak-proof waste bags. Every purchase helps support animal rescue efforts and the dream of building a sanctuary for pets in need. Free shipping in Canada on orders over $20.",
     href: "https://www.tikiboopets.ca/",
+  },
+  {
+    title: "Laddu Baby — Safe & Stylish Baby Essentials",
+    description:
+      "Shop soft, high-quality baby clothes & accessories at Laddu Baby. Perfect for newborns — safe materials, adorable designs.",
+    href: "https://laddubaby.com/",
+  },
+  {
+    title: "Tote Studio — Stylish & Functional Baby Carriers",
+    description:
+      "Discover modern, minimalist baby carriers at Tote Studio. Designed for comfort, safety & style — hands-free bond with your little one. Shop the collection now.",
+    href: "https://thetotestudio.com/",
   },
   {
     title: "Prosonus Solutions Support",
