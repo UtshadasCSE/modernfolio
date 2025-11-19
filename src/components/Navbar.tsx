@@ -53,7 +53,10 @@ const Navbar = () => {
       <div className="hidden md:flex items-center gap-4">
         {navitems.map((item) => (
           <Link key={item.label} href={item.href}>
-            <Button variant="ghost" className="flex items-center gap-1">
+            <Button
+              variant="ghost"
+              className="flex items-center gap-1 cursor-pointer"
+            >
               {item.icon}
               {item.label}
             </Button>
