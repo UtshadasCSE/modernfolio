@@ -2,10 +2,10 @@
 
 import type { Metadata } from "next";
 import { Fira_Sans, Fira_Code } from "next/font/google";
-import "./globals.css";
 import { siteConfig } from "@/lib/config/site.config";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/theme-provider";
+import ClickEffect from "@/components/ClickEffect";
 
 // Configure Fira Sans (main text) and Fira Code (mono/code)
 const firaSans = Fira_Sans({
@@ -42,6 +42,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <ClickEffect />
             <Navbar />
             {children}
           </ThemeProvider>
