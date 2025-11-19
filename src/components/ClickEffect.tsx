@@ -7,7 +7,7 @@ const ClickEffect = () => {
 
   useEffect(() => {
     // Create audio object once
-    audioRef.current = new Audio("/assets/mouse_click.mp3");
+    audioRef.current = new Audio("/assets/click.mp3");
 
     const handleClick = () => {
       if (!audioRef.current) return;
