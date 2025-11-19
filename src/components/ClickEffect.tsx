@@ -6,17 +6,22 @@ const ClickEffect = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    // Create audio object once
-    audioRef.current = new Audio("/assets/click.mp3");
+    audioRef.current = new Audio("/assets/mouse_click.mp3");
 
-    const handleClick = () => {
-      if (!audioRef.current) return;
+    const handleClick = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
 
-      audioRef.current.currentTime = 0; // restart sound on every click
-      audioRef.current.play().catch(() => {});
+      // Check cursor style where the user clicked
+      const cursorStyle = window.getComputedStyle(target).cursor;
+
+      if (cursorStyle === "pointer") {
+        if (!audioRef.current) return;
+
+        audioRef.current.currentTime = 0;
+        audioRef.current.play().catch(() => {});
+      }
     };
 
-    // Attach global click listener
     window.addEventListener("click", handleClick);
 
     return () => {
@@ -24,7 +29,7 @@ const ClickEffect = () => {
     };
   }, []);
 
-  return null; // no UI needed
+  return null;
 };
 
 export default ClickEffect;
