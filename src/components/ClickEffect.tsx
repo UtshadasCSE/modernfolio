@@ -6,7 +6,7 @@ const ClickEffect = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    audioRef.current = new Audio("/assets/mouse_click.mp3");
+    audioRef.current = new Audio("/assets/click.mp3");
 
     const handleClick = (event: MouseEvent) => {
       const target = event.target as HTMLElement;
