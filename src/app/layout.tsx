@@ -1,5 +1,5 @@
 // src/app/layout.tsx
-
+import "./globals.css";
 import type { Metadata } from "next";
 import { Fira_Sans, Fira_Code } from "next/font/google";
 import { siteConfig } from "@/lib/config/site.config";
