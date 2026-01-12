@@ -6,6 +6,18 @@ export type Projects = {
 
 export const projectsData: Projects[] = [
   {
+    title: "Calenly – AI-Powered Content Calendar & Planning Tool",
+    description:
+      "Calenly uses AI to help you plan, organize, and visualize your content calendar with smart suggestions, drag-and-drop scheduling, and clear timeline views.",
+    href: "https://calenly.vercel.app/",
+  },
+  {
+    title: "BMIGenius – Body Mass Index Calculator & Health Insight",
+    description:
+      "BMIGenius lets you quickly calculate your BMI from height and weight, showing your weight category and simple health context based on standard BMI ranges.",
+    href: "https://bmigenius.vercel.app/",
+  },
+  {
     title: "Luscia – The Marketplace for Modern Elegance",
     description:
       "Luscia is a Dutch-based curated online marketplace showcasing refined jewellery, fashion and lifestyle accessories crafted by local designers. The site positions itself as a space where “timeless design meets local craftsmanship.",
